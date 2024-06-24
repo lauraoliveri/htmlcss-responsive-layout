@@ -1,15 +1,11 @@
-/* RESET */
+/*** RESET ***/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
-/* Google Fonts */
+/*** Google Fonts ***/
 
 html {
     font-family: "PT Sans", sans-serif;
@@ -17,16 +13,22 @@ html {
     font-style: normal;
 }
 
-/* DEBUG */
+/*** DEBUG ***/
 /* * {
     outline: 1px solid rgb(255, 0, 0);
 } */
 
 /* GENERAL */
 
+img {
+    max-width: 100%;
+}
 
+html {
+    line-height: 1.8;
+}
 
-/* STYLE */
+/*** STYLE ***/
 
 header {
     background-color: #0084FD;
@@ -52,10 +54,121 @@ header {
     padding-top: 5px;
 }
 
+/* MAIN */
+
+/* Section info col  */
+
+.container-background {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.col-container {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.col-large {
+    width: 100%;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+.col {
+    width: calc(100% / 3 );
+    text-align: center;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.card >  h2 {
+    color: #0084FD;
+    padding-bottom: 20px;
+}
+
+.card-l >  h2 {
+    color: #0084FD;
+    padding-bottom: 20px;
+}
+
+.icon {
+    color: #0084FD;
+    font-size: 60px;
+}
+
+
+/* Strategic planning section */
+
+.strategic-big-container {
+    background-color: #9792E4;
+    padding: 30px;
+}
+
+.strategic-small-container {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.left-con > h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.left-con > p {
+    padding-right: 15px;
+}
+
+
+.left-con {
+    margin-top: 50px;
+}
+
+.strategic-img {
+    width: 100%;
+}
+
+.right-con {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;   
+}
+
+.right-con > p {
+    padding: 3px;
+    padding-bottom: 20px;
+}
+
+.strategic-img2 {
+    width: 70%;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.arrow-down {
+    margin: 0 auto;
+    width: 30px;
+    background-color: #9792E4;
+    border-radius: 100px;    
+}
+
+
+
 /* Footer */
+
 footer {
-    background-color: #333333;
-    
+    background-color: #333333;   
 }
 
 .footer-container {
@@ -101,7 +214,7 @@ footer {
     
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .button-get {
@@ -109,6 +222,16 @@ footer {
         background-color: white;
         color: black;
         border-radius: 50px;
+    }
+
+    /* Strategic Planning Section */
+    .strategic-big-container {
+        padding: 0;
+    }
+    
+    .left-con > h2 {
+        font-size:50px;
+        padding: 0;
     }
 
     /* footer */
@@ -128,8 +251,13 @@ footer {
     .header-tablet-desktop {
         display: flex;
         padding: 5px;
-        justify-content: space-between;
+        justify-content: space-around;
    } 
+
+   .header-container {
+    display: flex;
+    justify-content: space-around;
+   }
 
    .bars {
     display: none;
@@ -162,13 +290,125 @@ footer {
         border-radius: 50px;
     }
 
-     /* footer */
+    /** footer **/
+
      footer {
         padding: 30px;
     }
 
     .footer-container {
         width: 50%;
+    }
+
+    /* Section info col  */
+
+    .container-background {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .col-container {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-large {
+        width: calc((100% / 3 ) * 2);
+        background-color: #B5DDFF;
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .col {
+        width: calc(100% / 3 );
+        text-align: center;
+        background-color: #B5DDFF;
+        border-radius: 20px;
+        padding: 20px;
+
+    }
+
+    .card >  h2 {
+        color: #0084FD;
+        padding-bottom: 20px;
+    }
+
+    .card-l >  h2 {
+        color: #0084FD;
+        padding-bottom: 20px;
+    }
+
+    .icon {
+        color: #0084FD;
+        font-size: 60px;
+    }
+
+
+    /* Strategic planning section */
+
+    .strategic-big-container {
+        background-color: #9792E4;
+        padding: 30px;
+    }
+
+    .strategic-small-container {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    .left-con > h2 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .left-con > p {
+        padding-right: 15px;
+    }
+
+
+    .left-con {
+        margin-top: 50px;
+    }
+    .strategic-img {
+        width: 80%;
+
+    }
+
+    .right-con {
+        margin-top: 200px;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        background-color: white;
+        color: black;   
+    }
+
+    .right-con > h2, p {
+        font-size: smaller;
+    }
+
+    .right-con > p {
+        padding: 3px;
+        padding-bottom: 20px;
+    }
+
+    .strategic-img2 {
+        width: 70%;
+        padding: 5px 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .arrow-down {
+        margin: 0 auto;
+        width: 30px;
+        background-color: #9792E4;
+        border-radius: 100px;    
     }
 
 }
