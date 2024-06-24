@@ -163,6 +163,54 @@ header {
     border-radius: 100px;    
 }
 
+/* It's Free Section */
+
+.free-big-container {
+    background-color: #9792E4;
+}
+
+.free-small-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.get-started {
+    color: #ffffffa5;
+    padding-top: 15px;
+}
+
+.simple {
+    font-size: 35px;
+    color: white;
+}
+
+.free {
+    color: #FDC15F;
+    font-size: 70px;
+}
+
+.info {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.get-started > a {
+    text-decoration: none;
+    color: #9792E4;
+    background-color: white;
+    padding: 15px 60px;
+    border-radius: 50px;
+}
+
+.copyright {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: smaller;
+    color: white;
+}
 
 
 /* Footer */
@@ -290,9 +338,14 @@ footer {
         border-radius: 50px;
     }
 
+    /* Its free section */
+    .info {
+        width: 50%;
+    }
+
     /** footer **/
 
-     footer {
+    footer {
         padding: 30px;
     }
 
