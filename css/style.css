@@ -30,6 +30,7 @@ html {
 
 /*** STYLE ***/
 
+/* Header */
 header {
     background-color: #0084FD;
     width: 100%;
@@ -62,8 +63,9 @@ header {
     padding-top: 30px;
     padding-bottom: 50px;
 }
+
 .col-container {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     display: block;
     flex-wrap: wrap;
@@ -75,14 +77,36 @@ header {
     border-radius: 20px;
     text-align: left;
     padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
 }
 
+
+.button-apple {
+    color: #ffffff;
+    background-color: #0084FD;
+    margin: 0 auto;
+    width: 40%;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+.button-apple a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+
 .col {
-    width: calc(100% / 3 );
+    width: 100%;
     text-align: center;
     background-color: #B5DDFF;
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -165,75 +189,75 @@ header {
 
 /* Testimonials */
 
-    /* TOP */
+/* TOP */
 
-    .testimonials-small-c {
-        width: 90%;
-        margin: 0 auto;
-    }
+.testimonials-small-c {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .titles-testimonials {
-        text-align: center;
-    }
+.titles-testimonials {
+    text-align: center;
+}
 
-    .titles-testimonials div {
-        padding-top: 40px;
-        padding-bottom: 20px;
-        color: rgba(0, 0, 0, 0.621);
-    }
+.titles-testimonials div {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.621);
+}
 
-    .titles-testimonials h2 {
-        color: #9792E4;
-        font-size: 30px;
-        padding-bottom: 15px;
-    }
+.titles-testimonials h2 {
+    color: #9792E4;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
 
-    .titles-testimonials p {
-        font-size: large;
-        padding: 10px;
-        padding-bottom: 30px;
-    }
+.titles-testimonials p {
+    font-size: large;
+    padding: 10px;
+    padding-bottom: 30px;
+}
 
-    /* BOTTOM */
+/* BOTTOM */
 
-    .testimonial-col {
-        width: 100%;
-    }
+.testimonial-col {
+    width: 100%;
+}
 
-    .testimonial-single {
-        color: white;
-        background-color:  #9792E4;
-        text-align: center;
-        border-radius: 30px;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
+.testimonial-single {
+    color: white;
+    background-color:  #9792E4;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
 
-    .img-testimonial-c {
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
+.img-testimonial-c {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 
-    .img-testimonial-c img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+.img-testimonial-c img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-    .quote-testimonial {
-        padding: 15px 20px;
-    }
+.quote-testimonial {
+    padding: 15px 20px;
+}
 
-    .quote-testimonial p {
-        padding-bottom: 20px;
-    }
-    .fa-quote-right, .fa-quote-left {
-        font-size: larger;
-    }
+.quote-testimonial p {
+    padding-bottom: 20px;
+}
+.fa-quote-right, .fa-quote-left {
+    font-size: larger;
+}
 
 /* About Us */
 
@@ -385,13 +409,15 @@ footer {
 /* tablet */
 @media screen and (min-width: 768px) {
 
+    /* Header */
+
     .header-tablet-desktop {
         display: none;
-   }
+    }
 
    .bars {
-    display: inline-block;
-   }
+        display: inline-block;
+    }
 
 
     nav {
@@ -405,6 +431,60 @@ footer {
         color: black;
         border-radius: 50px;
     }
+
+    /* Section info col  */
+
+    .container-background {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .col-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .large-col-img {
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+    }
+
+    .col-large {
+        width: calc((100% / 3 ) * 2 - 30px);
+        background-color: #B5DDFF;
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+        margin: 7px;
+    }
+
+    
+    .col {
+        width: calc(100% / 3 - 30px);
+        text-align: center;
+        background-color: #B5DDFF;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card-l {
+        width: 50%;
+    }
+
+    .button-apple {
+        width: 70%;
+    }
+    
+    .button-apple a {
+        padding: 10px;
+    }
+    
 
     /* Strategic Planning Section */
     .strategic-big-container {
@@ -541,6 +621,8 @@ footer {
 /* Desktop */
 @media screen and (min-width: 992px) {
 
+     /* Header */
+
     .header-tablet-desktop {
         display: flex;
         padding: 5px;
@@ -548,19 +630,19 @@ footer {
     }
 
    .header-container {
-    display: flex;
-    justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
     }
 
    .bars {
-    display: none;
+        display: none;
     }
 
     li > a {
-    text-decoration: none;
-    color: white;
-    padding: 0 28px;
-    font-size: larger;
+        text-decoration: none;
+        color: white;
+        padding: 0 28px;
+        font-size: larger;
     }
 
     ul {
@@ -583,13 +665,64 @@ footer {
         border-radius: 50px;
     }
 
-    /* Testimonials */
-
-    /* TOP */
-
-    .testimonials-big-c {
-        
+    /* Section info col  */
+    
+    .container-background {
+        padding-top: 30px;
+        padding-bottom: 50px;
     }
+
+    .col-container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .large-col-img {
+        width: 35%;
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+    }
+
+    .abc {
+        object-fit: cover;
+    }
+    .col-large {
+        width: calc((100% / 3 ) * 2 - 30px);
+        background-color: #B5DDFF;
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+        margin: 7px;
+    }
+
+    
+    .col {
+        width: calc(100% / 3 - 30px);
+        text-align: center;
+        background-color: #B5DDFF;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card-l {
+        width: 50%;
+    }
+
+    .button-apple {
+        width: 70%;
+    }
+    
+    .button-apple a {
+        padding: 10px;
+    }
+
+    /* Testimonials */
+    /* TOP */
 
     .testimonials-small-c {
         width: 70%;
@@ -740,51 +873,6 @@ footer {
         padding: 30px;
     }
 
-    /* Section info col  */
-
-    .container-background {
-        padding-top: 30px;
-        padding-bottom: 50px;
-    }
-    .col-container {
-        width: 60%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .col-large {
-        width: calc((100% / 3 ) * 2);
-        background-color: #B5DDFF;
-        border-radius: 20px;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .col {
-        width: calc(100% / 3 );
-        text-align: center;
-        background-color: #B5DDFF;
-        border-radius: 20px;
-        padding: 20px;
-
-    }
-
-    .card >  h2 {
-        color: #0084FD;
-        padding-bottom: 20px;
-    }
-
-    .card-l >  h2 {
-        color: #0084FD;
-        padding-bottom: 20px;
-    }
-
-    .icon {
-        color: #0084FD;
-        font-size: 60px;
-    }
-
 
     /* Strategic planning section */
 
@@ -814,13 +902,14 @@ footer {
     .left-con {
         margin-top: 50px;
     }
+    
     .strategic-img {
         width: 80%;
 
     }
 
     .right-con {
-        margin-top: 200px;
+        margin-top: 300px;
         padding: 10px;
         border-radius: 30px;
         text-align: center;
