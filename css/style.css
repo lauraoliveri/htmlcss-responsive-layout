@@ -349,7 +349,8 @@ footer {
     .about-us-small-container {
         display: flex;
         width: 80%;
-        padding-top: 70px;
+        padding-left: 10px;
+        padding-top: 40px;
         padding-bottom: 50px;
     }
 
@@ -357,18 +358,25 @@ footer {
         line-height: 2;
     }
 
-    .b-about a {
-        font-size: 13px;
+    .left-about {
+        margin-right: 30px;
     }
-
     .right-about {
-        width: 40%;
-        padding: 10px;
-        margin-left: 10px;
-        margin-top: 20px;
+        width: 70%;
+        margin-top: 50px;
     }
 
+    .paragraph {
+        line-height: 2;
+    }
 
+    .h2-about {
+       width: 200px; 
+    }
+
+    .b-about a {
+        font-size: 12px;
+    }
 
     /* footer */
     footer {
