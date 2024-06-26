@@ -88,7 +88,7 @@ header {
     color: #ffffff;
     background-color: #0084FD;
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
     padding: 5px;
     border-radius: 50px;
     margin-top: 20px;
@@ -500,16 +500,13 @@ footer {
     }
 
     .large-col-img {
-        width: 35%;
-        margin-top: 60px;
-        margin-left: 100px;
+        width: 45%;
+        margin-top: 30px;
     }
 
     .col-large {
         width: calc((100% / 3 ) * 2 - 30px);
         background-color: #B5DDFF;
-        display: flex;
-        position: relative;
         border-radius: 20px;
         text-align: left;
         padding-top: 20px;
@@ -528,9 +525,6 @@ footer {
         margin: 10px;
     }
 
-    .card-l {
-        width: 50%;
-    }
 
     .button-apple {
         width: 40%;
